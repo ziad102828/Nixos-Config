@@ -7,5 +7,6 @@
     ./keybinds.nix
     ./startup.nix
     ./packages.nix
+    ./rofi.nix
   ];
 }
