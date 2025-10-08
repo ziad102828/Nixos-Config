@@ -1,4 +1,4 @@
-# home/postgresql.nix
+# modules/postgresql.nix (system level)
 { config, pkgs, ... }:
 
 {
@@ -11,8 +11,10 @@
     '';
   };
 
-  home.packages = with pkgs; [
-    postgresql_16  # Includes pg_bench
-    pgadmin4       # GUI administration tool
+  environment.systemPackages = with pkgs; [
+    postgresql_16
+    pgadmin4
   ];
+
+  users.users.ziad.extraGroups = [ "postgres" ];
 }
