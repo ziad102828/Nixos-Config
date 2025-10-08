@@ -8,7 +8,6 @@
     ./hyprland
     ./programs.nix
     ./fish.nix
-    ./postgresql.nix
     ];
 
   home = {

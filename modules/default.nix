@@ -10,5 +10,6 @@
     ./virtualization.nix
     ./docker.nix
     ./gaming.nix
+    ./postgresql.nix
   ];
 }
