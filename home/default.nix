@@ -7,7 +7,8 @@
     ./vscode.nix
     ./hyprland
     ./programs.nix
-  ./fish.nix
+    ./fish.nix
+    ./postgresql.nix
     ];
 
   home = {

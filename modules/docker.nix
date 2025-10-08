@@ -22,6 +22,8 @@
 
     podman
     podman-compose
+
+    cockpit
     buildah
     skopeo
   ];

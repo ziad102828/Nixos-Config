@@ -2,13 +2,7 @@
 { config, pkgs, ... }:
 
 {
-  wayland.windowManager.hyprland.extraConfig = ''
-    # Rofi launchers with Meta key
-    bind = $mod, D, exec, ${pkgs.rofi-wayland}/bin/rofi -show drun
-    bind = $mod, TAB, exec, ${pkgs.rofi-wayland}/bin/rofi -show window
-    bind = $mod SHIFT, E, exec, ${pkgs.rofi-wayland}/bin/rofi -show power-menu -modi power-menu:${pkgs.rofi-power-menu}/bin/rofi-power-menu
-    bind = $mod, C, exec, ${pkgs.rofi-wayland}/bin/rofi -show calc -modi calc -no-show-match -no-sort
-  '';
+  
 
   programs.rofi = {
     enable = true;

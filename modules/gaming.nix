@@ -14,6 +14,7 @@
     wineWowPackages.stable
     winetricks
     protontricks
+    protonup-qt
 
     gamemode
     mangohud
