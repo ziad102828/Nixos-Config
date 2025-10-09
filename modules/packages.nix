@@ -14,10 +14,15 @@
     neovim
     vscode
     tree
+    quick-webapps
 
   thunderbird
     vlc
     mpv
+    distrobox
+    boxbuddy
+    grc
+    
 
     unzip
     file

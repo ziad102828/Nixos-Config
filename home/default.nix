@@ -8,6 +8,7 @@
     ./hyprland
     ./programs.nix
     ./fish.nix
+    ./appimage.nix
     ];
 
   home = {
