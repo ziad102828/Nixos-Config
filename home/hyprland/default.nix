@@ -9,4 +9,11 @@
     ./packages.nix
     ./rofi.nix
   ];
+  
+  # Base Hyprland configuration
+  wayland.windowManager.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+    systemd.enable = true;
+  };
 }

@@ -19,12 +19,7 @@
     defaultNetwork.settings.dns_enabled = true;
   };
 
-  # Enable Cockpit
-  services.cockpit = {
-    enable = true;
-    port = 9090;
-    openFirewall = true;
-  };
+ 
 
   # Docker & Podman packages (system-wide)
   environment.systemPackages = with pkgs; [

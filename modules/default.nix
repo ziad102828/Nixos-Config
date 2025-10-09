@@ -11,5 +11,6 @@
     ./docker.nix
     ./gaming.nix
     ./postgresql.nix
+    ./cockpit.nix
   ];
 }

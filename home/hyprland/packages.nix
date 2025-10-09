@@ -17,9 +17,10 @@
     pavucontrol
     networkmanagerapplet
     brightnessctl
-    kdePackages.dolphin
+    dolphin  # Use this instead of kdePackages.dolphin
 
     xdg-desktop-portal-hyprland
+    xdg-desktop-portal-gtk
     cliphist
   ];
 
@@ -30,7 +31,16 @@
     XDG_SESSION_TYPE = "wayland";
     MOZ_ENABLE_WAYLAND = "1";
     QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
+    # Add Hyprland specific variables
+    HYPRLAND_LOG_WLR = "1";
+    XDG_CURRENT_DESKTOP = "Hyprland";
   };
 
   services.dunst.enable = true;
+  
+  # Start xdg-desktop-portal with Hyprland
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-hyprland pkgs.xdg-desktop-portal-gtk ];
+  };
 }
