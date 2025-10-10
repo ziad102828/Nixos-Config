@@ -48,7 +48,7 @@
 
   # Required services
   security.rtkit.enable = true;
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   
   # User groups for audio/video access
   users.users.ziad.extraGroups = [ "audio" "video" "pipewire" ];

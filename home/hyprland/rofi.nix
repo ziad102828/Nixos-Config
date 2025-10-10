@@ -34,6 +34,5 @@
     rofi-power-menu
     rofi-calc
     # Add rofi themes
-    rofi-themes
   ];
 }

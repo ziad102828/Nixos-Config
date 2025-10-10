@@ -17,11 +17,14 @@
     pavucontrol
     networkmanagerapplet
     brightnessctl
-    dolphin  # Use this instead of kdePackages.dolphin
+    kdePackages.dolphin  # Fixed this line
 
     xdg-desktop-portal-hyprland
     xdg-desktop-portal-gtk
     cliphist
+    playerctl  # Add this for media controls
+    swappy     # Add this for screenshot editing
+    blueman    # Add this for Bluetooth applet
   ];
 
   home.sessionVariables = {

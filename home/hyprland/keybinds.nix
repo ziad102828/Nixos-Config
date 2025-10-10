@@ -8,7 +8,7 @@
     bind = [
       # Application launchers
       "$mod, RETURN, exec, ${pkgs.kitty}/bin/kitty"
-      "$mod, E, exec, ${pkgs.dolphin}/bin/dolphin"
+      "$mod, E, exec, ${pkgs.kdePackages.dolphin}/bin/dolphin"
       "$mod, D, exec, ${pkgs.rofi-wayland}/bin/rofi -show drun"
       "$mod, R, exec, ${pkgs.rofi-wayland}/bin/rofi -show run"
 
