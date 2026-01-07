@@ -1,42 +1,34 @@
 {
-  description = "NixOS configuration with KDE Plasma, NVIDIA Optimus, and Flathub";
+  description = "NixOS configuration";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.05";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    plasma-manager = {
+      url = "github:pjones/plasma-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
-    let
+  outputs = { self, nixpkgs, home-manager, plasma-manager, ... }@inputs: {
+    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
-      lib = nixpkgs.lib;
-    in
-    {
-      nixosConfigurations.nixos = lib.nixosSystem {
-        inherit system;
-        specialArgs = { inherit inputs; };
-        modules = [
-          ./hardware-configuration.nix
-          ./modules
-
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useUserPackages = true;
-            home-manager.users.ziad = import ./home;
-            home-manager.extraSpecialArgs = { inherit inputs; };
-            home-manager.backupFileExtension = "backup";
-          }
-        ];
-      };
-
-      homeConfigurations."ziad" = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        modules = [ ./home ];
-        extraSpecialArgs = { inherit inputs; };
-      };
+      modules = [
+        ./hardware-configuration.nix
+        ./modules
+        home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.sharedModules = [ plasma-manager.homeModules.plasma-manager ];
+          home-manager.users.ziad = import ./home;
+        }
+      ];
     };
+  };
 }

@@ -1,16 +1,15 @@
-# home/git.nix
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   programs.git = {
     enable = true;
-    userName = "ziad102828";
-    userEmail = "ziadyehia25@outlook.com";
-    extraConfig = {
-      init.defaultBranch = "main";
-      pull.rebase = true;
-      push.autoSetupRemote = true;
-      core.editor = "code --wait";
+    # userName = "ziad102828";
+    # userEmail = "ziadyehia25@outlook.com"; # Deprecated options
+    settings = {
+      user = {
+        name = "ziad102828";
+        email = "ziadyehia25@outlook.com"; # TODO: Update this email
+      };
     };
   };
 }

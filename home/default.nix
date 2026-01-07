@@ -1,24 +1,19 @@
-# home/default.nix
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, ... }:
 
 {
   imports = [
-    ./git.nix
-    ./vscode.nix
-    ./hyprland
+    ./gaming.nix
     ./programs.nix
-    ./fish.nix
-    ./appimage.nix
-    ];
+    ./zsh.nix
+    ./plasma.nix
+    ./vscodium.nix
+    ./git.nix
+  ];
 
-  home = {
-    username = "ziad";
-    homeDirectory = "/home/ziad";
-    stateVersion = "25.05";
-  };
+  home.username = "ziad";
+  home.homeDirectory = "/home/ziad";
+
+  home.stateVersion = "24.11"; 
 
   programs.home-manager.enable = true;
-  nixpkgs.config.allowUnfree = true;
-
-
 }
