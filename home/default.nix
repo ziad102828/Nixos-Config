@@ -8,6 +8,7 @@
     ./plasma.nix
     ./vscodium.nix
     ./git.nix
+    ./docker
   ];
 
   home.username = "ziad";

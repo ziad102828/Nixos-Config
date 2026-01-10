@@ -5,5 +5,6 @@
     ./container.nix
     ./nvidia.nix
     ./user.nix
+    ./winapps.nix
   ];
 }

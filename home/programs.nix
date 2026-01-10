@@ -9,6 +9,7 @@
     thunderbird
     freetube
     opencode
-    vsce
+    distrobox
+    
   ];
 }
