@@ -1,10 +1,21 @@
+{ config, pkgs, ... }:
+
 {
   imports = [
-    ./core.nix
+    ./boot.nix
+    ./networking.nix
     ./desktop.nix
-    ./container.nix
     ./nvidia.nix
-    ./user.nix
-    ./winapps.nix
+    ./gaming
+    ./users.nix
+    ./packages.nix
+    ./flatpak.nix
   ];
+
+ 
+  system.stateVersion = "25.11";
+
+  nixpkgs.config.allowUnfree = true;
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }
