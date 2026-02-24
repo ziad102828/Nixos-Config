@@ -1,9 +1,0 @@
-{ ... }:
-
-{
-  imports = [
-    ./steam
-    ./lutris
-    ./mangohud
-  ];
-}

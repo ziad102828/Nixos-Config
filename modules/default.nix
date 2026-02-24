@@ -6,10 +6,11 @@
     ./networking.nix
     ./desktop.nix
     ./nvidia.nix
-    ./gaming
+    #./gaming
     ./users.nix
     ./packages.nix
     ./flatpak.nix
+    ./docker
   ];
 
  

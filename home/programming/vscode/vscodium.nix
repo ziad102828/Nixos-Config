@@ -16,6 +16,7 @@
       dbaeumer.vscode-eslint
       alefragnani.bookmarks
       alefragnani.project-manager
+      ms-vscode-remote.remote-containers
     ];
   };
 }

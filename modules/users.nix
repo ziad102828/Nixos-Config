@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.ziad = {
     isNormalUser = true;
     description = "ziad";
@@ -11,13 +10,14 @@
       kdePackages.kate
       kdePackages.falkon
       antigravity
+      librewolf
       quick-webapps
-    #  thunderbird
+      freetube
+    protonvpn-gui
     ];
   };
 
   programs.fish.enable = true;
 
-  # Install firefox.
   programs.firefox.enable = true;
 }
