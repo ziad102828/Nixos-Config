@@ -24,12 +24,16 @@
     freetube
     opencode
     distrobox
+    gemini-cli
+    cloudflare-warp
+    kdePackages.gwenview
   ];
 
   
   home.sessionVariables = {
     ELECTRON_OZONE_PLATFORM_HINT = "wayland";
     NIXOS_OZONE_WL = "1";
+    MOZ_GTK_TITLEBAR_DECORATION = "system";
   };
 
   programs.home-manager.enable = true;

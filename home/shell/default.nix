@@ -5,6 +5,10 @@
 
   programs.fish = {
     enable = true;
+    shellAliases = {
+      update = "nix flake update ~/Downloads/Nixos-Config-main";
+      rebuild = "sudo nixos-rebuild switch --flake ~/Downloads/Nixos-Config-main#nixos";
+    };
     interactiveShellInit = ''
       set fish_greeting # Disable greeting
     '';

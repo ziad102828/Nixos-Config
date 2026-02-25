@@ -12,6 +12,8 @@
     allowedUDPPorts = [ ];
   };
 
+  services.cloudflare-warp.enable = true;
+
   time.timeZone = "Africa/Cairo";
 
   i18n.defaultLocale = "en_US.UTF-8";
