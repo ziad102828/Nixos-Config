@@ -27,6 +27,9 @@
     gemini-cli
     cloudflare-warp
     kdePackages.gwenview
+    github-desktop
+    grim
+    flameshot
   ];
 
   
