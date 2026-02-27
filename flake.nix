@@ -25,6 +25,8 @@
         home-manager.follows = "home-manager";
       };
     };
+
+
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {

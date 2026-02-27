@@ -28,6 +28,9 @@
             [
               "com.system76.CosmicAppletStatusArea"
               "com.system76.CosmicAppletTiling"
+              "com.github.Aylur.cosmic-ext-applet-minimon"
+              "com.github.Aylur.cosmic-ext-applet-sysinfo"
+              "com.github.Aylur.cosmic-ext-applet-privacy-indicator"
               "com.system76.CosmicAppletAudio"
               "com.system76.CosmicAppletNetwork"
               "com.system76.CosmicAppletBattery"
@@ -57,4 +60,10 @@
       }
     ];
   };
+
+  home.packages = with pkgs; [
+    cosmic-ext-applet-minimon
+    cosmic-ext-applet-sysinfo
+    cosmic-ext-applet-privacy-indicator
+  ];
 }
