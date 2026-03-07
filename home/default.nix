@@ -16,19 +16,22 @@
   
   home.stateVersion = "25.11";
   home.packages = with pkgs; [
+    epiphany
     onlyoffice-desktopeditors
     obsidian
-    mpv
+   mpv
     unrar
     thunderbird
     freetube
+    pavucontrol
     opencode
-    distrobox
     gemini-cli
     cloudflare-warp
     kdePackages.gwenview
     grim
     flameshot
+    gnome-boxes
+    
   ];
 
   

@@ -10,9 +10,10 @@
       kdePackages.kate
       kdePackages.falkon
       antigravity
-      librewolf
+     librewolf
       quick-webapps
       freetube
+      github-desktop
     protonvpn-gui
     ];
   };

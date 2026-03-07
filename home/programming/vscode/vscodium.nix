@@ -17,6 +17,7 @@
       alefragnani.bookmarks
       alefragnani.project-manager
       ms-vscode-remote.remote-containers
+      Google.gemini-cli-vscode-ide-companion
     ];
   };
 }

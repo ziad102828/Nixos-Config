@@ -1,6 +1,12 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./searxng.nix
+    ./redlib.nix
+    ./airflow.nix
+  ];
+
   virtualisation.podman = {
     enable = true;
     dockerCompat = true;   
