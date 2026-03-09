@@ -5,6 +5,7 @@
     ./searxng.nix
     ./redlib.nix
     ./airflow.nix
+    ./jupyter.nix
   ];
 
   virtualisation.podman = {

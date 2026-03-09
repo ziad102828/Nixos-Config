@@ -15,6 +15,7 @@
       freetube
       github-desktop
     protonvpn-gui
+    visidata
     ];
   };
 
