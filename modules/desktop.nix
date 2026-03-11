@@ -8,6 +8,8 @@
     cosmic-store
   ];
 
+  services.xserver.desktopManager.gnome.enable = true;
+
   programs.niri.enable = true;
 
   

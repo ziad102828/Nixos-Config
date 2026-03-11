@@ -7,6 +7,7 @@
     ./niri
     ./noctalia
     ./cosmic
+    ./gnome
     ./scripts
   ];
 
@@ -31,7 +32,8 @@
     grim
     flameshot
     gnome-boxes
-    
+    discord
+    mongodb-compass
   ];
 
   
