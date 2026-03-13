@@ -11,7 +11,7 @@
     fuzzel
     waybar
     swaylock
-    mako
+    #mako
     wl-clipboard
     brightnessctl
     playerctl

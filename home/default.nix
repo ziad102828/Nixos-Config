@@ -9,6 +9,7 @@
     ./cosmic
     ./gnome
     ./scripts
+    ./gaming.nix
   ];
 
   home.username = "ziad";

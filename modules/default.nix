@@ -6,7 +6,6 @@
     ./networking.nix
     ./desktop.nix
     ./nvidia.nix
-    #./gaming
     ./users.nix
     ./packages.nix
     ./flatpak.nix
