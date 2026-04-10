@@ -8,13 +8,8 @@
     shell = pkgs.fish;
     packages = with pkgs; [
       kdePackages.kate
-      kdePackages.falkon
       antigravity
-     librewolf
-      quick-webapps
-      freetube
-      github-desktop
-    protonvpn-gui
+    proton-vpn
     visidata
     ];
   };

@@ -8,12 +8,12 @@
     cosmic-store
   ];
 
-  services.xserver.desktopManager.gnome.enable = true;
+  #services.xserver.desktopManager.gnome.enable = true;
 
   programs.niri.enable = true;
 
   
-  services.printing.enable = true;
+  services.printing.enable = false;
 
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -25,4 +25,5 @@
  
   };
 
+  security.apparmor.enable = true;
 }

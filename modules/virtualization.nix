@@ -1,16 +1,21 @@
 { config, pkgs, ... }:
 
 {
+  virtualisation.docker = {
+    enable = true;
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
+  };
+
+  hardware.nvidia-container-toolkit.enable = true;
   virtualisation.libvirtd = {
     enable = true;
     qemu = {
       package = pkgs.qemu_kvm;
-      runAsRoot = true;
+      runAsRoot = false;
       swtpm.enable = true;
-      ovmf = {
-        enable = true;
-        packages = [ pkgs.OVMFFull.fd ];
-      };
     };
   };
 
@@ -21,5 +26,6 @@
     spice
     spice-gtk
     spice-protocol
+    docker-compose
   ];
 }
