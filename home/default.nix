@@ -27,9 +27,7 @@
     #cloudflare-warp
     grim
     flameshot
-   # gnome-boxes
-   #discord
-
+    linux-wallpaperengine
   ];
 
   
