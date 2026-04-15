@@ -28,6 +28,7 @@
     grim
     flameshot
     linux-wallpaperengine
+    kdePackages.okular
   ];
 
   
