@@ -4,7 +4,7 @@
   users.users.ziad = {
     isNormalUser = true;
     description = "ziad";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
     shell = pkgs.fish;
     packages = with pkgs; [
       kdePackages.kate

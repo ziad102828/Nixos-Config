@@ -27,5 +27,6 @@
     spice-gtk
     spice-protocol
     docker-compose
+    cockpit-machines
   ];
 }

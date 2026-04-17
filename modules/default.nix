@@ -10,6 +10,7 @@
     ./packages.nix
     ./flatpak.nix
     ./virtualization.nix
+    ./ollama.nix
   ];
 
  

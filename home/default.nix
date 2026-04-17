@@ -29,6 +29,7 @@
     flameshot
     linux-wallpaperengine
     kdePackages.okular
+ 
   ];
 
   
